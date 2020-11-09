@@ -2,7 +2,7 @@
 using namespace std;
 template<typename T>
 struct node {
-	int data;
+	T data;
 	node<T>* next;
 };
 template<typename T>
@@ -51,9 +51,9 @@ public:
 	}
 };
 int main() {
-	stack<int> s;
+	stack<char> s;
 	for (int i = 1;i <= 10;i++) {
-		s.push(i);
+		s.push('a');
 	}
 	while (!s.empty())
 	{
